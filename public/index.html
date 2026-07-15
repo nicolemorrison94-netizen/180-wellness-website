@@ -378,7 +378,7 @@
     }
 
     /* ================================================================
-       PERSPECTIVE SECTION (Tab 1 lower)
+       QR PERSPECTIVE SECTION (Tab 1 lower)
     ================================================================ */
     .perspective-section {
       padding: clamp(72px, 11vw, 128px) 0;
@@ -486,14 +486,14 @@
 
     .glass-panel:hover {
       border-color: var(--gold-border-hi);
-      transform: translateY(-8px);
+      transform: translateY(-4px);
       box-shadow: 0 32px 72px rgba(0,0,0,0.5), 0 0 40px rgba(212,175,55,0.06);
     }
     .glass-panel:hover::before { opacity: 1; }
 
     .glass-panel::after {
       content: '';
-      position: absolute; inset: 0;
+      position: absolute inset: 0;
       background: radial-gradient(ellipse at top center, rgba(212,175,55,0.05) 0%, transparent 70%);
       pointer-events: none;
     }
