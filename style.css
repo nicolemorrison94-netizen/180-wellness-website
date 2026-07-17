@@ -425,7 +425,7 @@
     .check-list li .icon svg { color: var(--gold); }
 
     /* ================================================================
-       THE 180 METHOD --- Tab 3
+       THE 180 METHOD — Tab 3
     ================================================================ */
     .method-section {
       padding: clamp(72px, 11vw, 128px) 0;
@@ -540,7 +540,7 @@
     }
 
     /* ================================================================
-       VITALITY LOUNGE --- Tab 2
+       VITALITY LOUNGE — Tab 2
     ================================================================ */
     .lounge-section {
       padding: clamp(72px, 11vw, 100px) 0;
@@ -613,7 +613,7 @@
     .lounge-text { display: flex; flex-direction: column; gap: 24px; }
 
     /* ================================================================
-       IV MENU --- Full Menu (Tab 2)
+       IV MENU — Full Menu (Tab 2)
     ================================================================ */
     .iv-menu-section {
       padding: clamp(48px, 6vw, 80px) 0 clamp(32px, 4vw, 48px);
@@ -756,7 +756,7 @@
     }
 
     /* ================================================================
-       BESPOKE BOXES --- Tab 4
+       BESPOKE BOXES — Tab 4
     ================================================================ */
     .boxes-section {
       padding: clamp(72px, 11vw, 128px) 0;
@@ -962,7 +962,7 @@
       .iv-menu-grid { grid-template-columns: repeat(2, 1fr); }
       .im-grid { grid-template-columns: 1fr; }
 
-      /* -- Protocol name: prevent single-word-per-line wrapping in 2-col layout -- */
+      /* ── Protocol name: prevent single-word-per-line wrapping in 2-col layout ── */
       .iv-card-name {
         font-size: 15px;
         min-width: 0;
@@ -978,25 +978,25 @@
       .cta-contact-row { flex-direction: column; align-items: center; }
       .lounge-img-float { display: none; }
 
-      /* -- Protocol grid: single column, comfortable gap -- */
+      /* ── Protocol grid: single column, comfortable gap ── */
       .iv-menu-grid {
         grid-template-columns: 1fr;
         gap: 12px;
       }
 
-      /* -- Protocol cards: reduce side padding to widen text area -- */
+      /* ── Protocol cards: reduce side padding to widen text area ── */
       .iv-card {
         padding: 16px 14px;
       }
 
-      /* -- Card header: allow name to take all available width -- */
+      /* ── Card header: allow name to take all available width ── */
       .iv-card-header {
         min-width: 0;
       }
 
-      /* -- Protocol name: readable horizontal text on mobile -- */
+      /* ── Protocol name: readable horizontal text on mobile ── */
       .iv-card-name {
-        font-size: 15px;          /* explicit -- overrides clamp(14px,1.5vw,16px) */
+        font-size: 15px;          /* explicit — overrides clamp(14px,1.5vw,16px) */
         line-height: 1.35;
         min-width: 0;             /* lets flex shrink past content min-width */
         white-space: normal;      /* ensure no accidental nowrap */
@@ -1122,7 +1122,7 @@
 
 
     /* ================================================================
-       ABOUT CONCIERGE NURSING --- Perspective Tab Insert
+       ABOUT CONCIERGE NURSING — Perspective Tab Insert
     ================================================================ */
     .concierge-section {
       background: var(--basalt-mid);
@@ -1274,7 +1274,7 @@
       line-height: 1.45;
     }
     .perf-bundle-items li::before {
-      content: "\25C6";
+      content: "◆";
       color: var(--gold);
       font-size: 7px; margin-top: 4px; flex-shrink: 0;
     }
@@ -1313,4 +1313,3 @@
         width: 100%; text-align: center;
       }
     }
-
