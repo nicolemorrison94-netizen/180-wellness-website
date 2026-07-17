@@ -1,0 +1,181 @@
+.hero-actions { flex-direction: column; align-items: center; }
+      .cta-card { padding: 40px 24px; }
+      .cta-contact-row { flex-direction: column; align-items: center; }
+      .lounge-img-float { display: none; }
+
+      /* ── Protocol grid: single column, comfortable gap ── */
+      .iv-menu-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      /* ── Protocol cards: reduce side padding to widen text area ── */
+      .iv-card {
+        padding: 16px 14px;
+      }
+
+      /* ── Card header: allow name to take all available width ── */
+      .iv-card-header {
+        min-width: 0;
+      }
+
+      /* ── Protocol name: readable horizontal text on mobile ── */
+      .iv-card-name {
+        font-size: 15px;          /* explicit — overrides clamp(14px,1.5vw,16px) */
+        line-height: 1.35;
+        min-width: 0;             /* lets flex shrink past content min-width */
+        white-space: normal;      /* ensure no accidental nowrap */
+        overflow-wrap: break-word;
+        word-break: normal;
+      }
+
+      .tab-btn { padding: 12px clamp(10px, 2.5vw, 18px); font-size: 9px; }
+    }
+
+    /* ================================================================
+       PROOF / NUMBERS
+    ================================================================ */
+    .proof-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: clamp(32px, 6vw, 80px);
+      padding: clamp(60px, 8vw, 96px) 0;
+    }
+
+    .proof-item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+    .proof-number {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(40px, 6vw, 68px); font-weight: 700; line-height: 1;
+      background: linear-gradient(140deg, var(--gold-light), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .proof-unit {
+      font-size: clamp(16px, 2.2vw, 22px); font-weight: 700;
+      background: linear-gradient(140deg, var(--gold-light), var(--gold));
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .proof-label {
+      font-size: clamp(10px, 1.1vw, 12px); font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--text-muted); text-align: center; max-width: 120px; line-height: 1.5;
+    }
+    .proof-divider {
+      width: 1px; height: 60px;
+      background: linear-gradient(180deg, transparent, var(--gold-border), transparent);
+      align-self: center;
+    }
+
+    .quote-block {
+      max-width: 740px; margin: 0 auto;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(18px, 2.6vw, 26px);
+      font-style: italic; color: var(--text-soft);
+      line-height: 1.65; text-align: center;
+      padding: clamp(40px,5vw,64px) clamp(20px,5vw,60px);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(145deg, rgba(212,175,55,0.04) 0%, transparent 70%);
+      position: relative;
+    }
+    .quote-block::before {
+      content: '\201C';
+      position: absolute; top: -20px; left: 40px;
+      font-family: 'Playfair Display', serif;
+      font-size: 120px; font-weight: 700;
+      color: rgba(212,175,55,0.12); line-height: 1;
+    }
+    .quote-cite {
+      display: block; margin-top: 20px;
+      font-style: normal; font-family: 'Inter', sans-serif;
+      font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    @media (max-width: 900px) {
+      .proof-divider { display: none; }
+    }
+
+    /* ===== QUALIPHY GFE CLEARANCE BLOCK ===== */
+    .gfe-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: rgba(212,175,55,0.06);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      text-decoration: none;
+      color: inherit;
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+      max-width: 480px;
+      cursor: pointer;
+    }
+    .gfe-block:hover {
+      background: rgba(212,175,55,0.13);
+      border-color: var(--gold-border-hi);
+      transform: translateY(-2px);
+    }
+    .gfe-icon {
+      width: 38px; height: 38px; flex-shrink: 0;
+      border-radius: 50%;
+      background: rgba(212,175,55,0.10);
+      border: 1px solid var(--gold-border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold);
+    }
+    .gfe-text { display: flex; flex-direction: column; gap: 3px; }
+    .gfe-title {
+      font-size: 12px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--gold-light);
+    }
+    .gfe-subtitle {
+      font-size: 11px; font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.55;
+    }
+    /* Wider card variant used in cta-section */
+    .gfe-block.wide {
+      max-width: 100%;
+      justify-content: center;
+    }
+    .gfe-block.wide .gfe-text { align-items: flex-start; }
+
+
+    /* ================================================================
+       ABOUT CONCIERGE NURSING — Perspective Tab Insert
+    ================================================================ */
+    .concierge-section {
+      background: var(--basalt-mid);
+      padding: clamp(64px, 9vw, 112px) 0;
+      position: relative; z-index: 1;
+      border-top: 1px solid var(--gold-border);
+      border-bottom: 1px solid var(--gold-border);
+    }
+
+    .concierge-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .concierge-features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(16px, 2.5vw, 28px);
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    .concierge-feature-item {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: clamp(24px, 3vw, 40px);
