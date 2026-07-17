@@ -1,0 +1,14 @@
+    @media (max-width: 600px) {
+      .tab-bar {
+        justify-content: flex-start !important;
+        overflow-x: auto !important;
+        padding: 0 10px !important;
+        -webkit-overflow-scrolling: touch;
+      }
+      .tab-bar::-webkit-scrollbar { display: none; }
+      .tab-btn { flex: 0 0 auto !important; padding: 14px 20px !important; }
+      .nav-logo { font-size: 18px !important; }
+      .nav-cta { padding: 8px 16px !important; font-size: 10px !important; }
+      .iv-menu-grid, .boxes-grid { grid-template-columns: 1fr !important; }
+      .hero-logo { font-size: clamp(48px, 12vw, 80px) !important; }
+    }
