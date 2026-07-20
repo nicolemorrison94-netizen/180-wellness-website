@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>180· Wellness -- Digital Pitch Kit</title>
+  <title>180° Wellness — Digital Pitch Kit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:iltl,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&subset=latin&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="mobile.css">
 </head>
 <body>
 
-  <!-- STICKY NAV -->
+  <!-- ============================================================
+       STICKY NAV
+  ============================================================ -->
   <nav class="nav">
     <div class="container nav-inner">
-      <a href="#" class="nav-logo serif" onclick="switchTab(0); return false;">180· Wellness</a>
+      <a href="#" class="nav-logo serif" onclick="switchTab(0); return false;">180° Wellness</a>
       <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="nav-cta">
         Apply for Consult
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
     </div>
   </nav>
 
+  <!-- ============================================================
+       TAB BAR
+  ============================================================ -->
   <div class="tab-bar" id="tabBar">
     <button class="tab-btn active" data-tab="0" onclick="switchTab(0)">Perspective</button>
     <button class="tab-btn" data-tab="1" onclick="switchTab(1)">Vitality Lounge</button>
@@ -29,16 +35,59 @@
     <button class="tab-btn" data-tab="3" onclick="switchTab(3)">Bespoke Boxes</button>
   </div>
 
+  <!-- ============================================================
+       TAB CONTENT AREA
+  ============================================================ -->
   <main class="tab-content-area">
-    <!-- TAB 0 -->
+
+    <!-- ==========================================
+         TAB 1: PERSPECTIVE (Hero + Perspective)
+    ========================================== -->
     <section class="tab-panel active" id="tab-0">
+
+      <!-- HERO -->
       <header class="hero">
         <div class="hero-bg"></div>
         <div class="hero-glow"></div>
         <div class="hero-content">
           <p class="hero-eyebrow">Fort Lauderdale, FL · Root-Cause Functional Medicine</p>
-          <h1 class="hero-logo serif">180· Wellness</h1>
+          <h1 class="hero-logo serif">180° Wellness</h1>
           <p class="hero-sub">Authorized by Licensed Medical Director, we provide precision functional nutrition, advanced IV, and root-cause health protocols.</p>
+
+          <div class="hero-divider">
+            <span></span>
+            <div class="diamond"></div>
+            <span></span>
+          </div>
+
+          <p class="hero-tagline">
+            An elite concierge health practice for high-performance athletes
+            and executives who demand answers, not band-aids — built on the
+            principle that every body heals when given what it actually needs.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Apply for Consult
+            </a>
+            <button class="btn-ghost" onclick="switchTab(2)">
+              Discover the Method
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+
+          <!-- QUALIPHY GFE — Step 2 after applying -->
+          <a href="https://www.app.qualiphy.me/qualiphy-widget?clinic=180%20degrees%20wellness&clinicId=13279&first_name=&last_name=&email=&phone_number=&gender=&exams=selectable&tele_state_required=true&token=1141d1e292d777dec8cdfb5f86b69ebed7b32f92" target="_blank" rel="noopener" class="gfe-block" style="margin-top:16px;">
+            <div class="gfe-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+            </div>
+            <div class="gfe-text">
+              <div class="gfe-title">Get Medical Clearance (GFE)</div>
+              <div class="gfe-subtitle">Complete your mandatory 5-minute telehealth exam.</div>
+            </div>
+          </a>
+
           <div class="hero-trust">
             <span class="chip">RN-Directed Care</span>
             <span class="chip">Root-Cause Method</span>
@@ -48,375 +97,752 @@
         </div>
       </header>
 
-      <!-- ABOUT SECTION -->
-      <section class="section-block">
-        <div class="container">
-          <h3 class="section-heading">What is 180· Wellness?</h3>
-          <p class="section-text">We are a root-cause, clinician-led functional nutrition practice based in Fort Lauderdale, FL. We design bespoke health protocols around advanced diagnostic testing, precision nutrition, and supplement protocols authorized by our Licensed Medical Director. Our goal is simple: help you heal from the inside out.</p>
-        </div>
-      </section>
+      <div class="section-sep"></div>
 
-      <!-- WHY PARTNERHSIP SECTION -->
-      <section class="section-block bg-glass">
+      <!-- PERSPECTIVE -->
+      <div class="perspective-section">
         <div class="container">
-          <h3 class="section-heading">Why Partner With Us?</h3>
-          <div class="grid-3">
-            <div class="card">
-              <div class="card-icon">🧓</div>
-              <h4 class="card-title">Advanced Diagnostics</h4>
-              <p class="card-text">We go beyond standard labs, using functional markers to uncover hidden imbalances most doctors mis.</p>
+          <div class="perspective-grid">
+            <!-- TEXT (appears first) -->
+            <div class="perspective-text">
+              <p class="section-label">Our Perspective</p>
+              <h2 class="section-title serif">
+                Your Body Isn't<br />Broken. It's Been<br /><span class="gold">Misread.</span>
+              </h2>
+              <div class="gold-rule" style="margin-bottom:8px;"></div>
+              <p class="section-body">
+                Conventional medicine is built to manage conditions. We are built to
+                eliminate their root cause. Every symptom has a source — inflammation,
+                hormonal imbalance, micronutrient depletion, systemic dysfunction —
+                and until that source is identified and resolved, you are simply
+                managing decline with a better-looking calendar.
+              </p>
+              <p class="section-body">
+                At 180° Wellness, we reverse the standard clinical model. We go
+                upstream. We find the origin, design a precision protocol, and
+                rebuild your health in exactly the order your physiology demands.
+              </p>
+
+              <ul class="check-list">
+                <li>
+                  <span class="icon">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Comprehensive clinical assessment and specialized nutrient protocols
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Clinician-designed protocols tailored to your individual biochemistry
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Concierge access — available on your schedule, at your location
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  Ongoing optimization through quarterly clinical wellness reviews
+                </li>
+              </ul>
             </div>
-            <div class="card">
-              <div class="card-icon">💩</div>
-              <h4 class="card-title">Precision Nutrition</h4>
-              <p class="card-text">Custom-built nutrition and supplement protocols for YOUR functional lab results.</p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ABOUT CONCIERGE NURSING -->
+      <div class="concierge-section">
+        <div class="container">
+          <div class="concierge-inner">
+
+            <p class="section-label">Elite Services</p>
+            <h2 class="section-title serif">
+              The Standard of <span class="gold">Concierge Nursing</span>
+            </h2>
+            <div class="gold-rule" style="margin-bottom:8px;"></div>
+            <p class="section-body" style="text-align:center; margin: 0 auto 40px;">
+              We bring the clinic to you. 180° Wellness provides elite-level concierge nursing,
+              specializing in RN-administered IV fluids and targeted vitamin shots for clinical
+              restoration in the privacy of your home, office, or training facility. Our model
+              is built for high-performance individuals who require root-cause care without the
+              constraints of a traditional clinic.
+            </p>
+
+            <div class="concierge-features">
+
+              <!-- Feature 1 -->
+              <div class="concierge-feature-item">
+                <div class="concierge-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 2h8v4H8z"/>
+                    <path d="M12 6v16"/>
+                    <path d="M6 14h12"/>
+                    <path d="M4 10c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/>
+                  </svg>
+                </div>
+                <h4 class="concierge-feature-title">RN-Administered IV Fluids</h4>
+                <p class="concierge-feature-desc">Precision hydration and micronutrient protocols.</p>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="concierge-feature-item">
+                <div class="concierge-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m18 2 4 4-14 14H4v-4L18 2z"/>
+                    <path d="m14.5 5.5 4 4"/>
+                    <path d="M3 21h3"/>
+                  </svg>
+                </div>
+                <h4 class="concierge-feature-title">Targeted Vitamin Shots</h4>
+                <p class="concierge-feature-desc">Fast-acting intramuscular injections for energy and recovery.</p>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="concierge-feature-item">
+                <div class="concierge-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                  </svg>
+                </div>
+                <h4 class="concierge-feature-title">In-Home Clinical Restoration</h4>
+                <p class="concierge-feature-desc">Professional care in your private environment.</p>
+              </div>
+
+            </div><!-- /concierge-features -->
+
+          </div><!-- /concierge-inner -->
+        </div><!-- /container -->
+      </div><!-- /concierge-section -->
+
+      <div class="section-sep"></div>
+
+      <!-- PROOF / NUMBERS -->
+      <div style="background: var(--basalt-mid); position:relative; z-index:1;">
+        <div class="container">
+          <div class="proof-row">
+            <div class="proof-item">
+              <span class="proof-number serif">6</span>
+              <span class="proof-label">Signature clinical service categories</span>
             </div>
-            <div class="card">
-              <div class="card-icon">👃<+�iv>
-              <h4 class="card-title">IV Hydration & Nutrition</h4>
-              <p class="card-text">Medically-directed IV protocols for peak performance or effective recovery.</p>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <span class="proof-number serif">100<span class="proof-unit serif">%</span></span>
+              <span class="proof-label">Clinician-designed protocols</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <span class="proof-number serif">3</span>
+              <span class="proof-label">Phase transformation method</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <span class="proof-number serif">RN</span>
+              <span class="proof-label">Licensed nurse-directed care</span>
+            </div>
+          </div>
+
+          <!-- Quote -->
+          <div style="padding-bottom: clamp(64px,8vw,96px);">
+            <blockquote class="quote-block">
+              "We don't treat symptoms. We trace every issue back to its source,
+              then rebuild health in the order the body is designed to heal.
+              That's the 180° method — and it changes everything."
+              <cite class="quote-cite">— Licensed Medical Director · 180° Wellness</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-sep"></div>
+
+      <!-- CTA -->
+      <div class="cta-section">
+        <div class="container">
+          <div class="cta-card">
+            <p class="section-label" style="text-align:center;">Limited Availability</p>
+            <h2 class="cta-title serif">
+              Apply for Your<br /><span class="gold">Concierge Consult</span>
+            </h2>
+            <p class="cta-body">
+              We accept a limited number of new clients each quarter to maintain
+              the standard of care our clients expect. This is not a booking link
+              — it is an application. We want to make sure 180° Wellness is the
+              right fit before either of us commits.
+            </p>
+            <p class="cta-body" style="margin-top: -10px;">
+              Begin with a complimentary 20-minute discovery call to discuss your
+              health history, current challenges, and what a fully personalized
+              180° protocol would look like for you.
+            </p>
+
+            <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold" style="font-size:13px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.38 2 2 0 0 1 3.55 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.38a16 16 0 0 0 5.9 5.9l.87-.87a2 2 0 0 1IDIyLjExLS40NWMuOTA3LjMzOSAxLjg1LjU3MyAyLjgxLjVfIEEyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+
+              Apply for Consult
+            </a>
+
+            <!-- QUALIPHY GFE — After Apply button in CTA section -->
+            <a href="https://www.app.qualiphy.me/qualiphy-widget?clinic=180%20degrees%20wellness&clinicId=13279&first_name=&last_name=&email=&phone_number=&gender=&exams=selectable&tele_state_required=true&token=1141d1e292d777dec8cdfb5f86b69ebed7b32f92" target="_blank" rel="noopener" class="gfe-block wide">
+              <div class="gfe-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+              </div>
+              <div class="gfe-text">
+                <div class="gfe-title">Get Medical Clearance (GFE)</div>
+                <div class="gfe-subtitle">Complete your mandatory 5-minute telehealth exam.</div>
+              </div>
+            </a>
+
+            <div class="cta-contact-row">
+              <div class="cta-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+                <strong>Fort Lauderdale, Florida</strong>
+              </div>
+              <div class="cta-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.38 2 2 0 0 1 3.55 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.38a16 16 0 0 0 5.9 5.9l.87-.87a2 2 0 0 1IDIyLjExLS40NWMuOTA3LjMzOSAxLjg1LjU3MyAyLjgxLjVfIEEyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+
+                <strong>(516) 965-9840</strong>
+              </div>
+              <div class="cta-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <strong>180degreeswellness.com</strong>
+              </div>
+              <div class="cta-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                <strong><a href="mailto:info.180wellness@gmail.com" style="color:inherit;text-decoration:none;">info.180wellness@gmail.com</a></strong>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- AHPAFS SECTION -->
-      <section class="section-block">
-        <div class="container">
-          <h3 class="section-heading">Advanced Health Profile &amp; Functional Screening</h3>
-          <p class="section-text">Our signature AHPAFS provides a full-spectrum, functional health assessment — revealing what standard bloodwork misses.</p>
-          <div class="grouped-list">
-            <ul class="checklist">
-              <li>Comprehensive Metabolic Panel +20 markers</li>
-              <li>Full Thyroid Panel (TSH, Free T3, Free T4, TPOAb)</li>
-              <li>Hormone Panel (Estrogen, Progesterone, Testosterone)</li>
-              <li>IgG Food Sensitivity Panel (180+ foods)</li>
-              <li>Organic Acids Test - Git Microbiome Marpers</li>
-              <li>Ferritin, Iron Saturation, HSCRP, Homocysteine</li>
-            </ul>
-            <ul class="checklist">
-              <li>Vitamin D, B12, Folate, Magnesium RBC</li>
-              <li>Fasting Insulin + Glucose + HbA1C</li>
-              <li>Lipid Panel + Apolipoprotein A&B</li>
-              <li>FIB-4 Score + GGT + Albumin</li>
-              <li>Uric Acid, EGFR, Creatinine</li>
-              <li>Free T3/T4 ratio - Wilson's Syndrome marker</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- PRICING SECTION -->
-      <section class="section-block bg-glass">
-        <div class="container">
-          <h3 class="section-heading">Pricing Overview</h3>
-          <div class="grid-3">
-            <div class="price-card">
-              <h4 class="price-title">Free Consult</h4>
-              <div class="price-amount">$0 <span class="price-freq">15 min</span></div>
-              <ul class="price-features">
-                <li>Health goal discovery</li>
-                <li>Program recommendation</li>
-                <li>No obligation</li>
-              </ul>
-              <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold">Book Now</a>
-            </div>
-            <div class="price-card featured">
-              <h4 class="price-title">AHPAFS + Plan</h4>
-              <div class="price-amount">$897 <span class="price-freq">incl. labs</span></div>
-              <ul class="price-features">
-                <li>All tests in core screening</li>
-                <li>Caause analysis & protocol</li>
-                <li>Fullscript supplement plan</li>
-              </ul>
-              <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold">Apply Now</a>
-            </div>
-            <div class="price-card">
-              <h4 class="price-title">IV Nutrition</h4>
-              <div class="price-amount">$175 <span class="price-freq">per session</span></div>
-              <ul class="price-features">
-                <li>Custom IV formulas</li>
-                <li>Licensed Medical Director supervised</li>
-                <li>Post-protocol follow-up</li>
-              </ul>
-              <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold">Book Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
     </section>
-    <!-- TAB 1 -->
+
+    <!-- ==========================================
+         TAB 2: VITALITY LOUNGE (Lounge + IV Menu + IM Shots)
+    ========================================== -->
     <section class="tab-panel" id="tab-1">
-      <header class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-glow"></div>
-        <div class="hero-content">
-          <p class="hero-eyebrow">Fort Lauderdale, FL · Premium Wellness Space</p>
-          <h1 class="hero-logo serif">Vitality Lounge</h1>
-          <p class="hero-sub">A premium wellness lounge providing IV nutrition and recovery services, operated by 180· Wellness under Licensed Medical Director supervision.</p>
-          <div class="hero-trust">
-            <span class="chip">IED-Directed Care</span>
-            <span class="chip">Same Day Access</span>
-            <span class="chip">Medically-Supervised</span>
-            <span class="chip">Concierge Access</span>
-          </div>
-        </div>
-      </header>
 
-      <!-- SERVICES SEC -->
-      <section class="section-block">
+      <!-- Lounge Intro -->
+      <div class="lounge-section">
         <div class="container">
-          <h3 class="section-heading">Our Items &amp; Services</h3>
-          <div class="grid-3">
-            <div class="card">
-              <div class="card-icon">💩</div>
-              <h4 class="card-title">IV Nutrition</h4>
-              <p class="card-text">High-dose nutrient IVs including Myers Cocktail, glutathione, magnesium, and more.</p>
+          <div class="lounge-grid">
+            <!-- IMAGE STACK -->
+            <div class="lounge-image-stack">
+              <div class="lounge-img-main">
+                <div class="gold-corner"></div>
+                <div class="gold-corner br"></div>
+                <div class="lounge-badge">
+                  <span class="dot"></span>
+                  Now Available
+                </div>
+                <img
+                  src="https://static.prod-images.emergentagent.com/jobs/e7bf12b9-eee7-4b52-88fd-e1f28347eed1/images/fde33236e04734d444e1e95b694cd6f6809893dc27f8155f7b1bdcd5d137818d.png"
+                  alt="180° Wellness — Recovery Lifestyle"
+                  loading="lazy"
+                />
+              </div>
+              <div class="lounge-img-float">
+                <img
+                  src="https://static.prod-images.emergentagent.com/jobs/e7bf12b9-eee7-4b52-88fd-e1f28347eed1/images/34e3802a37c95b83d70511efc5e4c1f4c5f0d7f6ff12b3450b7ba271c80173e0.png"
+                  alt="IV Drip Detail"
+                  loading="lazy"
+                />
+              </div>
             </div>
-            <div class="card">
-              <div class="card-icon">🔽</div>
-              <h4 class="card-title">Neettle Drips</h4>
-              <p class="card-text">Targeted needle drips for specific nutrient deficiencies. Administered by Licensed Medical Director or supervised RN.</p>
-            </div>
-            <div class="card">
-              <div class="card-icon">🔄</div>
-              <h4 class="card-title">Recovery Packs</h4>
-              <p class="card-text">Formulated by 1 80· Wellness and authorized by Licensed Medical Director.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- IV PRICING -->
-      <section class="section-block bg-glass">
-        <div class="container">
-          <h3 class="section-heading">IV Services Prices</h3>
-          <div class="grid-3">
-            <div class="price-card">
-              <h4 class="price-title">Myers Cocktail</h4>
-              <div class="price-amount">$150 175 <span class="price-freq">per session</span></div>
-              <ul class="price-features">
-                <li>Magnesium, Bvitamins, VitC</li>
-                <li>Annti-inflammatory formula</li>
-                <li>General wellness</li>
-              </ul>
-            </div>
-            <div class="price-card featured">
-              <h4 class="price-title">NAD+ Optimizer</h4>
-              <div class="price-amount">$350 <span class="price-freq">per session</span></div>
-              <ul class="price-features">
-                <li>NAD+ +500mg</li>
-                <li>Best for aging, brain fog, fatigue</li>
-                <li>Energy & cognition reboot</li>
-              </ul>
-            </div>
-            <div class="price-card">
-              <h4 class="price-title">Glutathione Glow</h4>
-              <div class="price-amount">$150 <span class="price-freq">per session</span></div>
-              <ul class="price-features">
-                <li>Glutathione push</li>
-                <li>Free radical damage reversal</li>
-                <li>Skin brightening</li>
-              </ul>
+            <!-- TEXT -->
+            <div class="lounge-text">
+              <p class="section-label">Vitality Lounge</p>
+              <h2 class="section-title serif">
+                The IV Bar,<br />Redefined for<br /><span class="gold">High Performers.</span>
+              </h2>
+              <div class="gold-rule left" style="margin-bottom: 4px;"></div>
+              <p class="section-body">
+                Our Vitality Lounge is not a wellness trend. It is a precision clinical
+                environment where RN-administered intravenous protocols restore what
+                training, travel, stress, and time erode from your body — directly
+                and completely, bypassing the limitations of oral supplementation.
+              </p>
+
+              <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:4px;">
+                <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold" style="font-size:11px; padding:13px 28px;">
+                  Reserve a Session
+                </a>
+                <span class="chip">RN-Administered</span>
+                <span class="chip">Concierge Available</span>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      <div class="section-sep"></div>
+
+      <!-- Full IV Menu -->
+      <div class="iv-menu-section">
+        <div class="container">
+
+          <!-- Heading -->
+          <div class="menu-heading">
+            <p class="section-label">Signature IV Menu</p>
+            <h2 class="section-title serif" style="font-size:clamp(24px,3.5vw,38px); margin-bottom:0;">
+              15 Clinician-Crafted <span class="gold">Infusion Protocols</span>
+            </h2>
+            <div class="gold-rule" style="margin:14px auto 0;"></div>
+          </div>
+
+          <!-- IV Cards -->
+          <div class="iv-menu-grid">
+
+            <!-- 1. The 180 Foundation -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">The 180 Foundation</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Formulated with Vitamin B Complex, this combo optimizes everything from your skin to energy to digestive function.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Saline</span>
+                <span class="gold-pill">Vitamin C</span>
+                <span class="gold-pill">B12</span>
+                <span class="gold-pill">B-Complex</span>
+                <span class="gold-pill">Zinc</span>
+                <span class="gold-pill">Magnesium Sulfate</span>
+              </div>
+            </div>
+
+            <!-- 2. Elemental Hydration -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Elemental Hydration</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Can&rsquo;t drink those electrolytes fast enough? We got you.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Saline</span>
+              </div>
+            </div>
+
+            <!-- 3. Immune Armor -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Immune Armor</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Ideal for anyone fighting a current ailment and looking to guard themselves from future illness.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Saline</span>
+                <span class="gold-pill">High Dose Vitamin C</span>
+                <span class="gold-pill">Magnesium Sulfate</span>
+                <span class="gold-pill">B Complex</span>
+                <span class="gold-pill">B12</span>
+                <span class="gold-pill">Zinc</span>
+              </div>
+            </div>
+
+            <!-- 4. Metabolic Reset -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Metabolic Reset</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Big night? Not feeling so great now? This pain-relieving, antioxidant blend has you covered.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Saline or Lactated Ringers</span>
+                <span class="gold-pill">Glutathione Push</span>
+                <span class="gold-pill">Zofran</span>
+                <span class="gold-pill">Toradol</span>
+              </div>
+            </div>
+
+            <!-- 5. Luminous Restoration -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Luminous Restoration</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Brighten up your complexion with this hydrating blend of vitamins and antioxidants that detoxifies your body to help you look and feel your best.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Saline</span>
+                <span class="gold-pill">Vitamin C</span>
+                <span class="gold-pill">B Complex</span>
+                <span class="gold-pill">Zinc</span>
+                <span class="gold-pill">Lysine</span>
+                <span class="gold-pill">Glutathione</span>
+              </div>
+            </div>
+
+            <!-- 6. Circadian Reset -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Circadian Reset</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Don&rsquo;t skip a beat after traveling with this hydrating, relaxing, and anti-inflammatory blend.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Vitamin C</span>
+                <span class="gold-pill">B Complex</span>
+                <span class="gold-pill">B12</span>
+                <span class="gold-pill">Magnesium Sulfate</span>
+                <span class="gold-pill">L-Carnitine</span>
+                
+              </div>
+            </div>
+
+            <!-- 7. Elite Kinetic Protocol -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Elite Kinetic Protocol</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Pushing your body? This essential amino acid blend speeds up muscle repair to boost exercise ability.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Arginine</span>
+                <span class="gold-pill">Lysine</span>
+                <span class="gold-pill">L-Carnitine</span>
+                <span class="gold-pill">Glutathione</span>
+                
+              </div>
+            </div>
+
+            <!-- 8. Longevity Protocol -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Longevity Protocol</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Memory isn&rsquo;t what it used to be? This essential amino acid blend boosts mental cognition to help your brain and body perform like it used to.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Arginine</span>
+                <span class="gold-pill">Lysine</span>
+                <span class="gold-pill">L-Carnitine</span>
+                
+              </div>
+            </div>
+
+            <!-- 9. Systemic Quench -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Systemic Quench</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Almost all disease is rooted in excessive inflammation &mdash; nip it in the bud with curcumin!</div>
+              <div class="pill-row">
+                <span class="gold-pill">Saline</span>
+                <span class="gold-pill">Curcumin</span>
+              </div>
+            </div>
+
+            <!-- 10. Senolytic Shield -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Senolytic Shield</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Recommended for patients who regularly get NAD+ treatments. Quercetin is a flavonoid and senolytic, meaning it helps remove cells in your body that are creating unnecessary inflammation.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Saline</span>
+                <span class="gold-pill">Quercetin</span>
+              </div>
+            </div>
+
+            <!-- 11. Foundational Surge -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Foundational Surge</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Ideal for anyone looking to keep their body looking and feeling strong.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Vitamin C</span>
+                <span class="gold-pill">B12</span>
+                <span class="gold-pill">B-Complex</span>
+                <span class="gold-pill">Zinc</span>
+                <span class="gold-pill">Magnesium Sulfate</span>
+              </div>
+            </div>
+
+            <!-- 12. Metabolic Cleanse -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">Metabolic Cleanse</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Can be added to any of the drips. This powerful antioxidant helps metabolize toxins and carcinogens in the body, activates enzymes, and prevents oxidative cell damage.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Saline</span>
+                <span class="gold-pill">Glutathione</span>
+              </div>
+            </div>
+
+            <!-- 13. Cellular Fuel (NAD+) — featured -->
+            <div class="iv-card featured-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">&#10022; Cellular Fuel (NAD&#x207A;)</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">Not bouncing back the way you used to? NAD+ is believed to improve brain health, increase the efficiency of stem cells, stimulate anti-aging genes, repair your DNA, combat fatigue, and boost your metabolism.</div>
+              <div class="pill-row">
+                <span class="gold-pill">NAD+</span>
+                <span class="gold-pill">TMG</span>
+                <span class="gold-pill">SAMe</span>
+                <span class="gold-pill">Quercetin</span>
+                <span class="gold-pill">Saline</span>
+              </div>
+              <div class="nurses-note">
+                <strong>&#x1F489; Nurse&rsquo;s Note</strong>
+                Please let us know if you are planning on getting NAD+ a few days ahead of time, as our protocol entails shipping you supplements to take 24 hours before treatment.
+              </div>
+            </div>
+
+            <!-- 14. The Niagen Edge -->
+            <div class="iv-card">
+              <div class="iv-card-header">
+                <div class="iv-card-name serif">The Niagen Edge</div>
+                <div class="iv-card-price"></div>
+              </div>
+              <div class="iv-card-desc">O.K. NOW we&rsquo;re talkin. Offers standard doses and higher, ranging from $500 for basic, up to $1,200 for 500mg, and $1,500 for 1000mg single sessions.</div>
+              <div class="pill-row">
+                <span class="gold-pill">Niagen (NR)</span>
+                <span class="gold-pill">Saline</span>
+              </div>
+            </div>
+
+
+            </div><!-- /.iv-menu-grid -->
+
+          <!-- IM Injection Shots -->
+          <div class="im-section">
+            <div class="section-sep" style="margin-bottom:clamp(32px,4vw,52px);"></div>
+            <p class="section-label" style="text-align:center; margin-bottom:10px;">IM Injection Shots</p>
+            <h3 class="im-section-title serif">Targeted. Precise. <span class="gold">Instant Delivery.</span></h3>
+            <p class="im-section-sub">Intramuscular injections &mdash; fast-acting micronutrient delivery in two curated tiers.</p>
+
+            <div class="im-grid">
+              <!-- Level 1 -->
+              <div class="im-card">
+                <span class="im-card-level">Level 1 &mdash; Foundational</span>
+                <div class="im-card-name serif">Essential IM Shots</div>
+                <div class="iv-card-desc">Energy, metabolism &amp; focus · Fat metabolism · Immune · Antioxidant · Mood · Calms · Skin · Gut</div>
+                <div class="pill-row">
+                  <span class="gold-pill">B-12</span>
+                  <span class="gold-pill">MIC</span>
+                  <span class="gold-pill">D3</span>
+                  <span class="gold-pill">Glutathione</span>
+                  <span class="gold-pill">CoQ10</span>
+                  <span class="gold-pill">Taurine</span>
+                  <span class="gold-pill">Biotin</span>
+                  <span class="gold-pill">Glutamine</span>
+                </div>
+              </div>
+
+              <!-- Level 2 -->
+              <div class="im-card">
+                <span class="im-card-level">Level 2 &mdash; Advanced</span>
+                <div class="im-card-name serif">Elite Performance Shots</div>
+                <div class="iv-card-desc">Maximize energy, vital for mitochondria, brain restoration, anti-aging, elevate mood &amp; cognition · Endurance &amp; repair</div>
+                <div class="pill-row">
+                  <span class="gold-pill">NAD+</span>
+                  <span class="gold-pill">Arginine</span>
+                  <span class="gold-pill">L-Carnitine</span>
+                  <span class="gold-pill">Lysine</span>
+                </div>
+              </div>
+            </div><!-- /.im-grid -->
+
+            <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-top:clamp(24px,3vw,40px);">
+              <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold" style="font-size:11px; padding:13px 28px;">
+                Book Your Drip Session
+              </a>
+              <span class="chip">RN-Administered</span>
+              <span class="chip">Clinician-Designed</span>
+              <span class="chip">15 IV Formulas</span>
+              <span class="chip">2 IM Tiers</span>
+            </div>
+
+            <!-- QUALIPHY GFE — After service grid in Vitality Lounge -->
+            <div style="display:flex; justify-content:center; margin-top:24px;">
+              <a href="https://www.app.qualiphy.me/qualiphy-widget?clinic=180%20degrees%20wellness&clinicId=13279&first_name=&last_name=&email=&phone_number=&gender=&exams=selectable&tele_state_required=true&token=1141d1e292d777dec8cdfb5f86b69ebed7b32f92" target="_blank" rel="noopener" class="gfe-block" style="max-width:500px;">
+                <div class="gfe-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+                </div>
+                <div class="gfe-text">
+                  <div class="gfe-title">Get Medical Clearance (GFE)</div>
+                  <div class="gfe-subtitle">Complete your mandatory 5-minute telehealth exam before your first session.</div>
+                </div>
+              </a>
+            </div>
+
+          </div><!-- /.im-section -->
+
+        </div>
+      </div>
+
     </section>
 
-    <!-- TAB 2 -->
+    <!-- ==========================================
+         TAB 3: THE 180 METHOD (Three Phases)
+    ========================================== -->
     <section class="tab-panel" id="tab-2">
-      <header class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-glow"></div>
-        <div class="hero-content">
-          <p class="hero-eyebrow">Fort Lauderdale, FL · Clinical Health System</p>
-          <h1 class="hero-logo serif">The 180 Method</h1>
-          <p class="hero-sub">A structured, clinically-supervised program that addresses the root cause of your health challenges - using lab data, personalized protocols, and ongoing guidance.</p>
-          <div class="hero-trust">
-            <span class="chip">Lab-Data Driven</span>
-            <span class="chip">Clinically Supervised</span>
-            <span class="chip">Ongoing Guidance</span>
-            <span class="chip">Root-Cause Focused</span>
-          </div>
+      <div class="container">
+        <div style="max-width: 800px; margin: 0 auto 64px; text-align: center;">
+          <p class="section-label">The 180 Method</p>
+          <h2 class="section-title">Three Phases to Vitality</h2>
+          <p class="section-body" style="margin: 0 auto;">
+            Our proprietary framework for restoring root-cause health through advanced functional nutrition.
+          </p>
         </div>
-      </header>
 
-      <!-- METHOD STEPS -->
-      <section class="section-block">
-        <div class="container">
-          <h3 class="section-heading">The 5 Philosophies of the 180 Method</h3>
-          <div class="method-steps">
-            <div class="method-step">
-              <div class="step-number">0</div>
-              <div class="step-content">
-                <h4 class="step-title">Call/Text - Free 15-min Consult</h4>
-                <p class="step-desc">We'll talk about your health goals, symptoms, and determine the best path forward.</p>
-              </div>
-            </div>
-            <div class="method-step">
-              <div class="step-number">1</div>
-              <div class="step-content">
-                <h4 class="step-title">Diagnostic Testing</h4>
-                <p class="step-desc">Functional lab work reveals what standard doctors miss.</p>
-              </div>
-            </div>
-            <div class="method-step">
-              <div class="step-number">2</div>
-              <div class="step-content">
-                <h4 class="step-title">Root-Cause Analysis</h4>
-                <p class="step-desc">We identify the biomarkers and patterns driving your symptoms.</p>
-              </div>
-            </div>
-            <div class="method-step">
-              <div class="step-number">3</div>
-              <div class="step-content">
-                <h4 class="step-title">Personalized Protocol</h4>
-                <p class="step-desc">A bespoke health plan based on your unique biomarkers.</p>
-              </div>
-            </div>
-            <div class="method-step">
-              <div class="step-number">4</div>
-              <div class="step-content">
-                <h4 class="step-title">Ongoing Support</h4>
-                <p class="step-desc">Monthly check-ins, plan adjustments, and support as your body heals.</p>
-              </div>
-            </div>
+        <div class="method-steps">
+          <!-- PHASE 1 -->
+          <div class="method-step">
+            <div class="step-number">01</div>
+            <h3>Wellness Assessment</h3>
+            <p>In-depth health history, goals alignment, and lifestyle mapping.</p>
+            <ul class="panel-items">
+                <li>Health History &amp; Wellness Review</li>
+                <li>Nutritional Strategy Review</li>
+                <li>Performance Optimization Review</li>
+            </ul>
+          </div>
+          <!-- PHASE 2 -->
+          <div class="method-step">
+            <div class="step-number">02</div>
+            <h3>Precision Recalibration</h3>
+            <p>Targeted nutrient therapy, gut-health optimization, and hormonal balance.</p>
+            <ul class="panel-items">
+                <li>Bespoke IV Protocols</li>
+                <li>Clinical Supplementation</li>
+                <li>Inflammation Reduction</li>
+            </ul>
+          </div>
+          <!-- PHASE 3 -->
+          <div class="method-step">
+            <div class="step-number">03</div>
+            <h3>Sustained Vitality</h3>
+            <p>Long-term maintenance protocols and performance monitoring.</p>
+            <ul class="panel-items">
+                <li>Bi-Monthly Optimization</li>
+                <li>Wearable Data Integration</li>
+                <li>Annual Re-Assessment</li>
+            </ul>
           </div>
         </div>
-      </section>
-
-      <!-- PRICING SECTION -->
-      <section class="section-block bg-glass">
-        <div class="container">
-          <h3 class="section-heading">Prices</h3>
-          <div class="grid-3">
-            <div class="price-card">
-              <h4 class="price-title">Starter Protocol</h4>
-              <div class="price-amount">$647 <span class="price-freq">1 payment</span></div>
-              <ul class="price-features">
-                <li>AE Starter Lab Panel</li>
-                <li>Baseline Analysis</li>
-                <li>12 -week Protocol</li>
-              </ul>
-              <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold">Apply Now</a>
-            </div>
-            <div class="price-card featured">
-              <h4 class="price-title">The 180 Program</h4>
-              <div class="price-amount">$1,297 <span class="price-freq">1 January of Healing</span></div>
-              <ul class="price-features">
-                <li>Full AHPAFS Screening</li>
-                <li>Monthly support calls</li>
-                <li>Adjusted protocols as needed</li>
-              </ul>
-              <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold">Apply Now</a>
-            </div>
-            <div class="price-card">
-              <h4 class="price-title">VIP Membership</h4>
-              <div class="price-amount">$297 <span class="price-freq">per month</span></div>
-              <ul class="price-features">
-                <li>Ongoing protocol access</li>
-                <li>Priority access & discounts</li>
-                <li>Quarterly lab reviews</li>
-              </ul>
-              <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold">Apply Now</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </section>
 
-    <!-- TAB 3 -->
+    <!-- ==========================================
+         TAB 4: BESPOKE BOXES
+    ========================================== -->
     <section class="tab-panel" id="tab-3">
-      <header class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-glow"></div>
-        <div class="hero-content">
-          <p class="hero-eyebrow">Fort Lauderdale, FL · Premium Product Line</p>
-          <h1 class="hero-logo serif">Bespoke Boxes</h1>
-          <p class="hero-sub">Custom-formulated wellness boxes, formulated by 180· Wellness and authorized by our Licensed Medical Director.</p>
-          <div class="hero-trust">
-            <span class="chip">Formulated by 180· Wellness</span>
-            <span class="chip">Authorized by Licensed Medical Director</span>
-            <span class="chip">Premium Ingredients</span>
-            <span class="chip">Clinician-Designed</span>
-          </div>
+      <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto 64px;">
+          <p class="section-label">Bespoke Boxes</p>
+          <h2 class="section-title">Signature Curations</h2>
+          <p class="section-body" style="margin: 0 auto;">
+            Pre-configured clinical kits designed for specific outcomes. Everything you need, nothing you don't.
+          </p>
         </div>
-      </header>
 
-      <!-- BOXES -->
-      <section class="section-block">
-        <div class="container">
-          <h3 class="section-heading">Shop Wellness Boxes</h3>
-          <div class="grid-3">
-            <div class="price-card">
-              <h4 class="price-title">Energy & Focus Box</h4>
-              <div class="price-amount">$97 <span class="price-freq">per box</span></div>
-              <ul class="price-features">
-                <li>B12 + Adrenal Support</li>
-                <li>Magnesium glycwnate</li>
-                <li>Clean Energy Complex</li>
-              </ul>
-              <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold">Order Now</a>
-            </div>
-            <div class="price-card featured">
-              <h4 class="price-title">Gut & Gluten Box</h4>
-              <div class="price-amount">$147 <span class="price-freq">per box</span></div>
-              <ul class="price-features">
-                <li>L3-Glutamine + Probiotics</li>
-                <li>Enzymes + Gut Healing Complex</li>
-                <li>Anti-inflammatory omegas</li>
-              </ul>
-              <a href="https://clients.mindbodyonline.com/classic/ws?studioid="5752095" class="btn-gold">Order Now</a>
-            </div>
-            <div class="price-card">
-              <h4 class="price-title">Hormone Balance Box</h4>
-              <div class="price-amount">$127 <span class="price-freq">per box</span></div>
-              <ul class="price-features">
-                <li>DHEA + Pregnenolone Support</li>
-                <li>Magnesium Malate</li>
-                <li>Female Hormone Complex</li>
-              </ul>
-              <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="btn-gold">Order Now</a>
-            </div>
+        <div class="boxes-grid">
+          <!-- BOX 1 -->
+          <div class="box-card">
+            <div class="box-card-badge">Protocol 01</div>
+            <h3>The Gut-Reset</h3>
+            <ul class="box-list">
+              <li>Spore-based probiotics</li>
+              <li>Digestive enzymes (max strength)</li>
+              <li>L-Glutamine micronized powder</li>
+            </ul>
+            <a href="https://app.malla.co/join/nicole-morrison-483516" class="btn-gold small" style="margin-top: 24px;">Learn More</a>
+          </div>
+          <!-- BOX 2 -->
+          <div class="box-card">
+            <div class="box-card-badge">Protocol 02</div>
+            <h3>The Travel-Kit</h3>
+            <ul class="box-list">
+              <li>High-dose Liposomal Vitamin C</li>
+              <li>Quercetin + Zinc complex</li>
+              <li>Electrolyte replenishment packs</li>
+            </ul>
+            <a href="https://app.malla.co/join/nicole-morrison-483516" class="btn-gold small" style="margin-top: 24px;">Learn More</a>
+          </div>
+          <!-- BOX 3 -->
+          <div class="box-card">
+            <div class="box-card-badge">Protocol 03</div>
+            <h3>Sport Defense Kit</h3>
+            <ul class="box-list">
+              <li>NAD+ precursor supplements</li>
+              <li>Amino acid complex</li>
+              <li>Adrenal support adaptogens</li>
+            </ul>
+            <a href="https://app.malla.co/join/nicole-morrison-483516" class="btn-gold small" style="margin-top: 24px;">View Full Bundle</a>
           </div>
         </div>
-      </section>
+      </div>
     </section>
+
   </main>
 
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <p class="footer-brand serif">180· Wellness — Clinical Health Protocols</p>
-      <p class="footer-disclosure">All services and protocols authorized by our Licensed Medical Director. Services provided by 180· Wellness and affiliated licensed providers are for nutritional and supportive health purposes only. This is not medical diagnosis or treatment. © 2025 All rights reserved.</p>
+    <div class="container">
+      <div class="gold-rule" style="margin: 0 auto 48px;"></div>
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+        <div>
+          <h1 class="serif" style="font-size: 24px; margin-bottom: 4px;">180° Wellness</h1>
+          <p style="font-size: 14px; color: var(--text-muted);">© 2026 180 Degrees Wellness, LLC.</p>
+        </div>
+        <div style="display: flex; gap: 32px;">
+          <a href="mailto:info.180wellness@gmail.com" style="font-size: 14px; color: var(--text-soft);">Contact</a>
+          <a href="https://instagram.com/180wellness" style="font-size: 14px; color: var(--text-soft);">Instagram</a>
+        </div>
+      </div>
+      
+      <!-- CLINICAL DISCLAIMER -->
+      <div style="margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(212,175,55,0.1); font-size: 12px; color: var(--text-muted); line-height: 1.8;">
+        <p>* The services offered by 180° Wellness have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. All medical clearances and Good Faith Exams (GFE)s are performed by Lighthouse Medical Services, PC under the direction of a Licensed Medical Doctor.</p>
+      </div>
     </div>
   </footer>
 
   <script>
     function switchTab(index) {
-      document.querySelectorAll('.tab-panel').forEach((p, i) => {
-        p.classList.toggle('active', i === index);
-      });
-      document.querySelectorAll('.tab-btn').forEach((b, i) => {
-        b.classList.toggle('active', i === index);
-      });
+      // Remove active classes
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+
+      // Add active classes
+      document.querySelectorAll('.tab-btn')[index].classList.add('active');
+      document.querySelectorAll('.tab-panel')[index].classList.add('active');
+
+      // Scroll tab bar to center the button on mobile
+      const tabBar = document.getElementById('tabBar');
+      const activeBtn = document.querySelectorAll('.tab-btn')[index];
+      const scrollLeft = activeBtn.offsetLeft - (tabBar.offsetWidth / 2) + (activeBtn.offsetWidth / 2);
+      tabBar.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+
+      // Scroll to top of content area
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-      const tabBar = document.getElementById('tabBar');
-      if (!tabBar) return;
-      let startX = 0;
-      let endX = 0;
-      tabBar.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-      });
-      tabBar.addEventListener('touchend', (e) => {
-        endX = e.changedTouches[0].clientX;
-        const diff = startX - endX;
-        const current = [...document.querySelectorAll('.tab-btn')].findIndex(b => b.classList.contains('active'));
-        if (diff > 50 && current < 3) switchTab(current + 1);
-        if (diff < -50 && current > 0) switchTab(current - 1);
+    // Support keyboard navigation for tabs
+    document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+      btn.addEventListener('keydown', (e) => {
+        let next;
+        if (e.key === 'ArrowRight') next = (i + 1) % 4;
+        else if (e.key === 'ArrowLeft') next = (i + 3) % 4;
+        if (next !== undefined) {
+          switchTab(next);
+          document.querySelectorAll('.tab-btn')[next].focus();
+        }
       });
     });
   </script>
