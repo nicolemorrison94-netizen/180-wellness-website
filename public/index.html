@@ -1,1 +1,53 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>180° Wellness — Digital Pitch Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+
+  <!-- STICKY NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo serif" onclick="switchTab(0); return false;">180° Wellness</a>
+      <a href="https://clients.mindbodyonline.com/classic/ws?studioid=5752095" class="nav-cta">
+        Apply for Consult
+      </a>
+    </div>
+  </nav>
+
+  <div class="tab-bar" id="tabBar">
+    <button class="tab-btn active" data-tab="0" onclick="switchTab(0)">Perspective</button>
+    <button class="tab-btn" data-tab="1" onclick="switchTab(1)">Vitality Lounge</button>
+    <button class="tab-btn" data-tab="2" onclick="switchTab(2)">The 180 Method</button>
+    <button class="tab-btn" data-tab="3" onclick="switchTab(3)">Bespoke Boxes</button>
+  </div>
+
+  <main class="tab-content-area">
+    <section class="tab-panel active" id="tab-0">
+      <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">Fort Lauderdale, FL · Root-Cause Functional Medicine</p>
+          <h1 class="hero-logo serif">180° Wellness</h1>
+          <p class="hero-sub">Authorized by Licensed Medical Director, we provide precision functional nutrition, advanced IV, and root-cause health protocols.</p>
+          <div class="hero-trust">
+            <span class="chip">RN-Directed Care</span>
+            <span class="chip">Root-Cause Method</span>
+            <span class="chip">100% Clinician-Designed</span>
+            <span class="chip">Concierge Access</span>
+          </div>
+        </div>
+      </header>
+    </section>
+  </main>
+
+</body>
+</html>
